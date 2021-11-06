@@ -1,0 +1,36 @@
+body {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: #153E70;
+    background-color: white;
+}
+h1 {
+    font-size: 60px;
+}
+p {
+    font-size: 24px;
+}
+a {
+    text-decoration: none;
+    color: #153E70;
+    padding: 5px 5px 5px 5px;
+}
+a:hover {
+    background-color: #153E70;
+    color: white;
+}
+nav {
+    display: grid;
+    max-width: 700px;
+    margin: auto;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+@media (max-width: 750px) {
+    nav {
+        display: grid;
+        max-width: 450px;
+        margin: auto;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto;
+    }
+}
