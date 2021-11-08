@@ -7,15 +7,22 @@ body {
 h1 {
     font-size: 60px;
 }
-p {
+h2 {
+    font-size: 35px;
+}
+body p {
     font-size: 24px;
+}
+#pronounce {
+    margin: auto;
+    max-width: 700px;
 }
 a {
     text-decoration: none;
     color: #153E70;
     padding: 5px 5px 5px 5px;
 }
-a:hover {
+nav a:hover {
     background-color: #153E70;
     color: white;
 }
@@ -25,6 +32,9 @@ nav {
     margin: auto;
     grid-template-columns: auto auto auto auto auto auto;
 }
+footer p {
+    font-size: 16px;
+}
 @media (max-width: 750px) {
     nav {
         display: grid;
@@ -32,5 +42,9 @@ nav {
         margin: auto;
         grid-template-rows: auto auto;
         grid-template-columns: auto auto auto;
+    }
+    #pronounce {
+        margin: auto;
+        max-width: 450px;
     }
 }
