@@ -49,6 +49,7 @@ footer p {
 }
 .button {
     background-color: white;
+    border: 2px solid var(--ngblue);
     color: var(--ngblue);
     font-size: 35px;
     font-family: "Inter", sans-serif;
