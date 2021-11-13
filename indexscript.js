@@ -85,3 +85,16 @@ const changeTextOnHover = (nodeRef) => {
         nodeRef.innerHTML = caesarCipher(originalText, randomShift);
     }
 }
+
+/**
+ * showPronounceGuide shows and hides the pronounciation
+ * guide on click
+ */
+const showPronounceGuide = () => {
+    const guide = document.getElementById("pronounce");
+    if (guide.style.visibility == "hidden") {
+        guide.style.visibility = "visible";
+    } else {
+        guide.style.visibility = "hidden";
+    }
+}
