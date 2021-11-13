@@ -22,6 +22,10 @@ a {
     color: #153E70;
     padding: 5px 5px 5px 5px;
 }
+#waterloo:hover {
+    background-color: black;
+    color: #ffd54f;
+}
 nav a:hover {
     background-color: #153E70;
     color: white;
