@@ -1,7 +1,11 @@
+/* Global CSS variables */
+:root {
+    --ngblue: #153E70;
+}  
 body {
     font-family: "Inter", sans-serif;
     text-align: center;
-    color: #153E70;
+    color: var(--ngblue);
     background-color: white;
 }
 h1 {
@@ -19,7 +23,7 @@ body p {
 }
 a {
     text-decoration: none;
-    color: #153E70;
+    color: var(--ngblue);
     padding: 5px 5px 5px 5px;
 }
 #waterloo:hover {
@@ -27,8 +31,9 @@ a {
     color: #ffd54f;
 }
 nav a:hover {
-    background-color: #153E70;
+    background-color: var(--ngblue);
     color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 nav {
     display: grid;
@@ -38,6 +43,23 @@ nav {
 }
 footer p {
     font-size: 16px;
+}
+#pronounce {
+    visibility: hidden;
+}
+.button {
+    background-color: white;
+    color: var(--ngblue);
+    font-size: 35px;
+    font-family: "Inter", sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.button:hover {
+    /* Inspired by W3School's box-shadow property here https://www.w3schools.com/css/css3_buttons.asp*/
+    background-color: var(--ngblue);
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 @media (max-width: 750px) {
     nav {
