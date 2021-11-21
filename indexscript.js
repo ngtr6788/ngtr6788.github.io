@@ -98,3 +98,18 @@ const showPronounceGuide = () => {
         guide.style.visibility = "hidden";
     }
 }
+
+/**
+ * toggleColourMode toggles light and dark mode via a button
+ * 
+ * Solution inspired by 
+ * https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#using-custom-properties
+ */
+const toggleColourMode = () => {
+    const wantsDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+    if (wantsDarkMode.matches) {
+        document.body.classList.toggle("light-theme");
+    } else {
+        document.body.classList.toggle("dark-theme");
+    }
+}

@@ -10,10 +10,16 @@
         <title>Nguyen Tran</title>
     </head>
     <body>
+        <!-- The top of the page -->
         <header>
             <h1><a href="">Nguyen Tran</a></h1>
             <p>Bachelor of Computer Science<br><a color id="waterloo">University of Waterloo</a> 2025</p>
         </header>
+
+        <!-- Toggle light/dark mode button -->
+        <button class="button" onclick="toggleColourMode();">Toggle light/dark mode</button>
+
+        <!-- Navigation bar -->
         <nav>
             <p><a href="" onmouseover="changeTextOnHover(this);">home</a></p>
             <p><a href="https://github.com/ngtr6788" onmouseover="changeTextOnHover(this);">github</a></p>
@@ -22,6 +28,8 @@
             <p><a href="404.html" onmouseover="changeTextOnHover(this);">blog</a></p>
             <p><a href="404.html" onmouseover="changeTextOnHover(this);">contact</a></p>
         </nav>
+
+        <!-- Pronouncation Guide -->
         <button class="button" onclick="showPronounceGuide();" onmouseover="changeTextOnHover(this)">Pronounciation Guide</button>
         <div id="pronounce">
             <p>
@@ -31,6 +39,8 @@
                 Of course, you're welcome to Google or learn any method, as long as you try to sound as close as possible.
             </p>
         </div>
+
+        <!-- The end of a page -->
         <footer>
             <p>Currently built with plain HTML, CSS and JS so far. I'm still learning, so forgive me please.</p>
         </footer>

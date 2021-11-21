@@ -1,12 +1,33 @@
 /* Global CSS variables */
 :root {
-    --ngblue: #153E70;
-}  
+    --bluelight: #153E70;
+    --backlight: white;
+    --bluedark: #9DC7FF;
+    --backdark: #121212;
+}
+body {
+    --ngblue: var(--bluelight);
+    --backcolour: var(--backlight);
+}
+body.dark-theme {
+    --ngblue: var(--bluedark);
+    --backcolour: var(--backdark);
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        --ngblue: var(--bluedark);
+        --backcolour: var(--backdark);
+    }  
+    body.light-theme {
+        --ngblue: var(--bluelight);
+        --backcolour: var(--backlight);
+    }
+}
 body {
     font-family: "Inter", sans-serif;
     text-align: center;
     color: var(--ngblue);
-    background-color: white;
+    background-color: var(--backcolour);
 }
 h1 {
     font-size: 60px;
@@ -32,7 +53,7 @@ a {
 }
 nav a:hover {
     background-color: var(--ngblue);
-    color: white;
+    color: var(--backcolour);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 nav {
@@ -48,10 +69,10 @@ footer p {
     visibility: hidden;
 }
 .button {
-    background-color: white;
+    background-color: var(--backcolour);
     border: 2px solid var(--ngblue);
     color: var(--ngblue);
-    font-size: 35px;
+    font-size: 24px;
     font-family: "Inter", sans-serif;
     padding: 10px 20px;
     cursor: pointer;
@@ -59,7 +80,7 @@ footer p {
 .button:hover {
     /* Inspired by W3School's box-shadow property here https://www.w3schools.com/css/css3_buttons.asp*/
     background-color: var(--ngblue);
-    color: white;
+    color: var(--backcolour);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 @media (max-width: 750px) {
