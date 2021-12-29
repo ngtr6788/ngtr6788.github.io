@@ -1,98 +1,100 @@
 /* Global CSS variables */
 :root {
-    --bluelight: #153E70;
-    --backlight: white;
-    --bluedark: #9DC7FF;
-    --backdark: #121212;
+  --bluelight: #153e70;
+  --backlight: white;
+  --bluedark: #9dc7ff;
+  --backdark: #27292a;
 }
 body {
-    --ngblue: var(--bluelight);
-    --backcolour: var(--backlight);
+  --ngblue: var(--bluelight);
+  --backcolour: var(--backlight);
 }
 body.dark-theme {
-    --ngblue: var(--bluedark);
-    --backcolour: var(--backdark);
+  --ngblue: var(--bluedark);
+  --backcolour: var(--backdark);
 }
 @media (prefers-color-scheme: dark) {
-    body {
-        --ngblue: var(--bluedark);
-        --backcolour: var(--backdark);
-    }  
-    body.light-theme {
-        --ngblue: var(--bluelight);
-        --backcolour: var(--backlight);
-    }
+  body {
+    --ngblue: var(--bluedark);
+    --backcolour: var(--backdark);
+  }
+  body.light-theme {
+    --ngblue: var(--bluelight);
+    --backcolour: var(--backlight);
+  }
 }
 body {
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    color: var(--ngblue);
-    background-color: var(--backcolour);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: var(--ngblue);
+  background-color: var(--backcolour);
 }
 h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 h2 {
-    font-size: 35px;
+  font-size: 35px;
 }
 body p {
-    font-size: 24px;
+  font-size: 24px;
 }
 #pronounce {
-    margin: auto;
-    max-width: 700px;
+  margin: auto;
+  max-width: 700px;
 }
 a {
-    text-decoration: none;
-    color: var(--ngblue);
-    padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  color: var(--ngblue);
+  padding: 5px 5px 5px 5px;
 }
 #waterloo:hover {
-    background-color: black;
-    color: #ffd54f;
+  background-color: black;
+  color: #ffd54f;
 }
 nav a:hover {
-    background-color: var(--ngblue);
-    color: var(--backcolour);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: var(--ngblue);
+  color: var(--backcolour);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 nav {
-    display: grid;
-    max-width: 700px;
-    margin: auto;
-    grid-template-columns: auto auto auto auto auto auto;
+  display: grid;
+  max-width: 700px;
+  margin: auto;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 footer p {
-    font-size: 16px;
+  font-size: 16px;
 }
 #pronounce {
-    visibility: hidden;
+  visibility: hidden;
 }
 .button {
-    background-color: var(--backcolour);
-    border: 2px solid var(--ngblue);
-    color: var(--ngblue);
-    font-size: 24px;
-    font-family: "Inter", sans-serif;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: var(--backcolour);
+  border: 2px solid var(--ngblue);
+  color: var(--ngblue);
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 .button:hover {
-    /* Inspired by W3School's box-shadow property here https://www.w3schools.com/css/css3_buttons.asp*/
-    background-color: var(--ngblue);
-    color: var(--backcolour);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /* Inspired by W3School's box-shadow property here https://www.w3schools.com/css/css3_buttons.asp*/
+  background-color: var(--ngblue);
+  color: var(--backcolour);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 750px) {
-    nav {
-        display: grid;
-        max-width: 450px;
-        margin: auto;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto auto;
-    }
-    #pronounce {
-        margin: auto;
-        max-width: 450px;
-    }
+  nav {
+    display: grid;
+    max-width: 450px;
+    margin: auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+  }
+  #pronounce {
+    margin: auto;
+    max-width: 450px;
+  }
 }
